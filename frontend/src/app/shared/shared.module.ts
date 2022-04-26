@@ -23,6 +23,9 @@ import { TxFeeRatingComponent } from '../components/tx-fee-rating/tx-fee-rating.
 import { ReactiveFormsModule } from '@angular/forms';
 import { LanguageSelectorComponent } from '../components/language-selector/language-selector.component';
 import { ColoredPriceDirective } from './directives/colored-price.directive';
+import { AmountComponent } from '../components/amount/amount.component';
+import { ChangeComponent } from '../components/change/change.component';
+import { AmountShortenerPipe } from '../shared/pipes/amount-shortener.pipe';
 
 @NgModule({
   declarations: [
@@ -47,6 +50,9 @@ import { ColoredPriceDirective } from './directives/colored-price.directive';
     Decimal2HexPipe,
     FeeRoundingPipe,
     ColoredPriceDirective,
+    AmountComponent,
+    ChangeComponent,
+    AmountShortenerPipe,
   ],
   imports: [
     CommonModule,
@@ -61,6 +67,7 @@ import { ColoredPriceDirective } from './directives/colored-price.directive';
   providers: [
     VbytesPipe,
     RelativeUrlPipe,
+    AmountShortenerPipe,
   ],
   exports: [
     NgbAccordionModule,
@@ -92,6 +99,9 @@ import { ColoredPriceDirective } from './directives/colored-price.directive';
     Decimal2HexPipe,
     FeeRoundingPipe,
     ColoredPriceDirective,
+    AmountComponent,
+    ChangeComponent,
+    AmountShortenerPipe,
   ]
 })
 export class SharedModule {}
