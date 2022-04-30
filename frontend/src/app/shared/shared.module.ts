@@ -26,6 +26,7 @@ import { ColoredPriceDirective } from './directives/colored-price.directive';
 import { AmountComponent } from '../components/amount/amount.component';
 import { ChangeComponent } from '../components/change/change.component';
 import { AmountShortenerPipe } from '../shared/pipes/amount-shortener.pipe';
+import { SatsComponent } from './components/sats/sats.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { AmountShortenerPipe } from '../shared/pipes/amount-shortener.pipe';
     AmountComponent,
     ChangeComponent,
     AmountShortenerPipe,
+    SatsComponent,
   ],
   imports: [
     CommonModule,
@@ -102,6 +104,7 @@ import { AmountShortenerPipe } from '../shared/pipes/amount-shortener.pipe';
     AmountComponent,
     ChangeComponent,
     AmountShortenerPipe,
+    SatsComponent,
   ]
 })
 export class SharedModule {}
